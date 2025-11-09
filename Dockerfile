@@ -11,7 +11,7 @@ COPY . ./
 RUN chmod +x mvnw
 
 # Build the app.
-RUN ./mvnw package -DskipTests
+RUN ./mvnw -DoutputFile=target/mvn-dependency-list.log -B -DskipTests clean dependency:list install
 
 # Run the quarkus app 
 CMD ["sh", "-c", "java -jar target/quarkus-app/quarkus-run.jar"]
