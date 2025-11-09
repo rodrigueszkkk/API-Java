@@ -50,7 +50,7 @@
 
         <dependency>
             <groupId>io.quarkus</groupId>
-            <artifactId>quarkus-jdbc-postgresql</artifactId>
+            <artifactId>quarkus-jdbc-oracle</artifactId>
         </dependency>
 
         <dependency>
